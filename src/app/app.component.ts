@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {environment} from "../environments/environment";
-
+import {API} from "../environments/environment";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,4 +9,5 @@ import {environment} from "../environments/environment";
 export class AppComponent {
   demo = environment.api;
   title = 'ALO';
+  name = API.name;
 }

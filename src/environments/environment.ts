@@ -6,6 +6,9 @@ export const environment = {
   production: false,
   api: 'tét'
 };
+export const API = {
+  name: "tst"
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
