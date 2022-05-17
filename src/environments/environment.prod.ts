@@ -1,7 +1,10 @@
 export const environment = {
   production: true,
-  api: 'build'
 };
 export const API = {
-  name: "build"
+  GATEWAY_URL: 'http://localhost:8888',
+  AUTH: {
+    PATH: '/auth',
+    LOGIN: '/login'
+  }
 }
