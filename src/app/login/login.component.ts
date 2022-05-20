@@ -58,6 +58,7 @@ export class LoginComponent implements OnInit {
       this.authService.login(dataForm).subscribe(data =>{
         this.tokenService.setToken(data.token)
         this.tokenService.setName(data.name)
+        this.tokenService.setIdKey(data.id)
         this.router.navigate(['/'])
       })
     }

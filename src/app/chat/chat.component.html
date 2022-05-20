@@ -1,0 +1,28 @@
+<div class="layout-main-container ">
+  <div class="flex align-items-center  lg:px-8  ng-star-inserted" style="height: 700px">
+    <div class="surface-card p-3 m-3 shadow-2 border-round h-full lg:w-3" >
+      <div *ngFor="let user of users">
+        <h2 *ngIf="userId != user.id" (click)="onclick(user)">{{user.name}}</h2>
+      </div>
+    </div>
+
+
+    <div class="surface-card p-4 shadow-2 border-round h-full lg:w-9" >
+<div>
+  <h2 >{{name}}</h2>
+</div>
+      <div *ngIf="check">
+        <input type="text" pInputText [(ngModel)]="content"/>
+        <button pButton type="button" label="Send" (click)="send()"></button>
+
+      </div>
+      <div *ngIf="check">
+        <div *ngFor="let message of messages">
+          <h3>{{message.senderId}}</h3> <span>{{message.content}}</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
